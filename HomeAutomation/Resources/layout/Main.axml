@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:id="@+id/Main">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <!--<EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:fontFamily="Cambria Math"
+                android:textSize="22dp"
+                android:gravity="top"
+                android:inputType="none"
+                android:textIsSelectable="true"
+                android:id="@+id/VoiceBox" />-->
+        </LinearLayout>
+        <TextView
+            android:padding="20dp"
+            android:text=" Controls: "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="30dp"
+            android:textAlignment="gravity"
+            android:gravity="bottom"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/textView3" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:layout_marginTop="0.0dp">
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:text="Fan"
+                    android:textAlignment="gravity"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" />
+                <ToggleButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:width="150dp"
+                    android:text="Fan"
+                    android:id="@+id/Fan" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="20dp">
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:text="Light"
+                    android:textAlignment="gravity"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" />
+                <ToggleButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:width="150dp"
+                    android:text="Light"
+                    android:id="@+id/Light" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="20dp">
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:text="TV"
+                    android:textAlignment="gravity"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" />
+                <ToggleButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:width="150dp"
+                    android:text="TV"
+                    android:id="@+id/TV" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:id="@+id/linearLayout2">
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:text="AC"
+                    android:textAlignment="gravity"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/textView2" />
+                <ToggleButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:width="150dp"
+                    android:text="AC"
+                    android:id="@+id/AC" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageButton
+            android:background="@android:color/transparent"
+            android:src="@drawable/voiceicon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/VoiceButton"
+            android:scaleType="fitCenter"
+            android:padding="20dp"
+            android:adjustViewBounds="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Formula"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:fontFamily="Cambria Math"
+            android:textSize="22dp"
+            android:gravity="top"
+            android:inputType="none"
+            android:textIsSelectable="true"
+            android:id="@+id/FormulaBox" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/About"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <TextView
+            android:text=" \r\n\n\nDeveloped By: "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="24dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="  Hamza Liaqat\r\n  Hasnat Aslam"
+                android:gravity="left"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="25dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="0101  \r\n0123  "
+                android:gravity="right"
+                android:textSize="25dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="40dp"
+            android:text=" Supervisor: "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="30dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Mr. Muhammad Mujahid"
+            android:gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="24dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+    </LinearLayout>
+</LinearLayout>
